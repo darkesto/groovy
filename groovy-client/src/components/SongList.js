@@ -19,7 +19,7 @@ function SongList() {
 
                 {songs.map((song) => (
 
-                    <Link to={`/songs/${song.id}`} key={song.id} className="song-card">
+                    <Link to={`/songs/${song._id}`} key={song._id} className="song-card">
                         <img src={song.image} alt={song.title} className="song-image" />
                         <div className="song-details">
                             <h3 className="song-title">{song.title}</h3>
