@@ -1,18 +1,21 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import './SongDetails.css';
 
 
 function SongDetails({ match }) {
     const [song, setSong] = useState(null);
+    let { id: songId } = useParams();
+
 
     useEffect(() => {
-        const songId = match.params.id;
+
         // Fetch song details from your API endpoint
         axios.get(`http://localhost:3001/api/songs/${songId}`)
             .then((response) => setSong(response.data))
             .catch((error) => console.error('Error fetching song:', error));
-    }, [match.params.id]);
+    }, [songId]);
 
     return (
         <div className="song-details-container">
