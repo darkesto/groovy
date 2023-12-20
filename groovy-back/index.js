@@ -8,7 +8,7 @@ const port = 3001;
 
 
 
-// Replace 'your_database_name' and 'your_connection_string' with your MongoDB details
+// database //
 const dbName = 'groovy';
 const connectionString = 'mongodb://localhost:27017/' + dbName;
 
@@ -23,7 +23,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', () => {
     console.log('Connected to MongoDB');
 });
-
+////////
 
 app.use(cors());
 app.use(express.json());

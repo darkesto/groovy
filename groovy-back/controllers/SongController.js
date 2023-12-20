@@ -71,7 +71,6 @@ const Song = require('../models/Song');
 //     res.status(201).json(newSong);
 // };
 
-const Song = require('../models/Song');
 
 
 // Get all songs from MongoDB
