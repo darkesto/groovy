@@ -10,7 +10,6 @@ function SongList() {
             .then((response) => setSongs(response.data))
             .catch((error) => console.error('Error fetching songs:', error));
     }, []);
-
     return (
         <div>
             <h2>Song List</h2>
@@ -18,6 +17,7 @@ function SongList() {
                 {songs.map((song) => (
                     <li key={song.id}>
                         <Link to={`/song/${song.id}`}>{song.title}</Link>
+
                     </li>
                 ))}
             </ul>

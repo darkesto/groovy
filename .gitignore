@@ -3,4 +3,6 @@
 # dependencies
 /groovy-client/node_modules
 /groovy-back/node_modules
+/groovy-back/package.json
+/groovy-back/package-lock.json
 

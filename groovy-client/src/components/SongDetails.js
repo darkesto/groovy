@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function SongDetails({ match }) {
     const [song, setSong] = useState(null);
-
+    console.log(song);
     useEffect(() => {
         const songId = match.params.id; // assuming you're passing the song ID in the URL
         axios.get(`http://localhost:3001/api/songs/${songId}`)
