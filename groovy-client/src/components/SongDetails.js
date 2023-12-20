@@ -4,6 +4,8 @@ import axios from 'axios';
 import './SongDetails.css';
 
 
+const videoId = 'dQw4w9WgXcQ';
+
 function SongDetails({ match }) {
     const [song, setSong] = useState(null);
     let { id: songId } = useParams();
@@ -34,6 +36,7 @@ function SongDetails({ match }) {
         e.preventDefault();
         axios.put(`http://localhost:3001/api/songs/${songId}`, editedSong)
             .then((response) => {
+                alert("bravo t'es un bg")
                 console.log('Song updated successfully:', response.data);
                 // Optionally update the local state or perform any action after updating the song
             })
@@ -82,7 +85,23 @@ function SongDetails({ match }) {
                         {/* Add more input fields for other song details */}
                         <button type="submit">Update Song</button>
                     </form>
+
+                    <div className="video-container">
+                        <iframe
+                            width="560"
+                            height="315"
+                            src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
                 </div>
+
+
+
+
             ) : (
                 <p>Loading...</p>
             )

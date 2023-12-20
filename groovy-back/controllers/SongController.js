@@ -27,7 +27,7 @@ const getSongById = async (req, res) => {
         res.status(500).json({ message: 'Error fetching song', error: error.message });
     }
 };
-
+// Get a song in MongoDB
 const createSong = async (req, res) => {
     try {
         const { title, artist, genre, description, image, file } = req.body;
@@ -48,6 +48,7 @@ const createSong = async (req, res) => {
 
 
 const updateSong = async (req, res) => {
+
     const { id } = req.params;
     const { title, artist, genre, description, image, file } = req.body;
 
@@ -57,7 +58,7 @@ const updateSong = async (req, res) => {
             { title, artist, genre, description, image, file },
             { new: true }
         );
-
+        // const song = await Song.findById(id);
         if (song) {
             res.json(song);
         } else {
