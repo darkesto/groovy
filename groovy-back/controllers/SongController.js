@@ -8,7 +8,7 @@ let songs = [
         'Artist 1',
         'Genre 1',
         'Description for Song 1',
-        'https://example.com/image1.jpg',
+        'https://images.pexels.com/photos/167092/pexels-photo-167092.jpeg',
         'song1.mp3'
     ),
     new Song(
@@ -17,7 +17,7 @@ let songs = [
         'Artist 2',
         'Genre 2',
         'Description for Song 2',
-        'https://example.com/image2.jpg',
+        'https://images.pexels.com/photos/63703/pexels-photo-63703.jpeg',
         'song2.mp3'
     ),
 
@@ -27,7 +27,7 @@ let songs = [
         'Artist 3',
         'Genre 3',
         'Description for Song 3',
-        'https://example.com/image3jpg',
+        'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg',
         'song3.mp3'
     ),
     new Song(
@@ -36,8 +36,8 @@ let songs = [
         'Artist 4',
         'Genre 4',
         'Description for Song 4',
-        'https://example.com/image4.jpg',
-        'song54.mp3'
+        'https://images.pexels.com/photos/144429/pexels-photo-144429.jpeg',
+        'song4.mp3'
     ),
     new Song(
         5,
@@ -45,7 +45,7 @@ let songs = [
         'Artist 5',
         'Genre 5',
         'Description for Song 5',
-        'https://example.com/image5.jpg',
+        'https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg',
         'song5.mp3'
     )
 ];
