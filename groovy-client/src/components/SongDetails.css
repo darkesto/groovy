@@ -1,0 +1,35 @@
+.song-details-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.song-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.song-info {
+    margin-bottom: 15px;
+}
+
+.song-info p {
+    margin: 5px 0;
+}
+
+.song-description {
+    font-style: italic;
+    color: #666;
+}
+
+.song-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.audio-player {
+    width: 100%;
+    margin-top: 20px;
+}
